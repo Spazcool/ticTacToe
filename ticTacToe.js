@@ -32,7 +32,6 @@ $(document).ready(function() {
         document.getElementById(choice).style.cssText = "background-color: #FC1501; color: #5C5C5C";
     }
 
-
     //RANDOMLY SELECT A NUM IN A RANGE
     function randoCell(min, max) {
         return Math.floor(Math.random() * (max - min)) + min;
@@ -58,7 +57,9 @@ $(document).ready(function() {
                             availableCells.splice(d, 1);
                         }
                     }
-                } }
+                }
+                // console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " || oPlayedCells: ", oPlayedCells);
+            }
         }
         return availableCells;
     }
@@ -82,42 +83,13 @@ $(document).ready(function() {
                 document.getElementById(aiPrimarySequence[randoCell(0, aiPrimarySequence.length)]).innerHTML = XorO;
                 //ELSE GRAB AT RANDOM
             } else {
-console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " || oPlayedCells: ", oPlayedCells);
-            }
-        }
-        return availableCells;
-    };
-
-    function aiMoves(XorO) {
-        //GRAB THE CENTER IF ITS FREE
-        if (document.getElementById("5").innerHTML === "") {
-            document.getElementById("5").innerHTML = XorO;
-            //IF CENTER IS NOT FREE
-        } else if (document.getElementById("5").innerHTML !== "") {
-            //IF l IN PRIMARY SEQUENCE IS ALSO IN playedCells POP IT OUT OF THE PRIMARY SEQUENCE THEN RANDOMLY SELECT FROM WHAT IS LEFT
-            for (var l = 0; l < aiPrimarySequence.length; l++) {
-                for (var w = 0; w < playedCells.length; w++) {
-                    if (aiPrimarySequence[l] === playedCells[w]) {
-                        aiPrimarySequence.splice(l, 1);
-                    }
-                }
-            }
-            //IF THERE REMAIN CELLS IN THE aiPrimarySequence GRAB EM
-            if (aiPrimarySequence.length > 0) {
-                document.getElementById(aiPrimarySequence[randoCell(0, aiPrimarySequence.length)]).innerHTML = XorO;
-                //ELSE GRAB AT RANDOM
-            } else {
-                
                 document.getElementById(availableCells[randoCell(0, availableCells.length)]).innerHTML = XorO;
             }
         }
         didWhoWin(XorO);
-
     }
 
-    };
-
-
+//AI IS PLAYING AS X OR O
     function aiCharater() {
         playedOrAvailable();
         if (character === "X") {
@@ -125,17 +97,14 @@ console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " 
         } else {
             aiMoves("X");
         }
-
     }
 
-    //CHECK IF THERES A WINNING STREAK
+//CHECK IF THERES A WINNING STREAK
     function didWhoWin(who) {
         function bannerAppend() {
             $("#banner").html(who + " won!");
             $(".banner").slideToggle(400);
-
         }
-
         for (var s = 0; s < winningSequences.length; s++) {
             if (document.getElementById(winningSequences[s][0]).innerHTML === who && document.getElementById(winningSequences[s][1]).innerHTML === who && document.getElementById(winningSequences[s][2]).innerHTML === who) {
                 bannerAppend();
@@ -144,16 +113,11 @@ console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " 
         }
         gameOverCheck();
         return false;
-
     }
 
     //IF THERES A DRAW
     function gameOverCheck(cat) {
         counter += 1;
-
-        if (counter >= 9) {
-
-        //IF ALL ARE CHECKED
         if (counter >= 9) {
             $("#banner").html("Draw!");
             $(".banner").slideToggle(400);
@@ -163,11 +127,7 @@ console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " 
         }
     }
 
-    //RESET FOR A NEW GAME
-    function reset() {
-
-    };
-
+//RESET FOR A NEW GAME
     function reset() {
         $(".cell").html("");
         document.getElementById("X").style.cssText = "background-color: #800000; color: black;";
@@ -183,18 +143,10 @@ console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " 
     }
 
     //STARTS HERE WITH THE INPUTS
-
-    $(".cell").click(function() {
-        //CHECK IF THE CELL IS AVAILABLE
-        if ($(this).html() !== "") {} else {
-
-    };
-
-    //STARTS HERE WITH THE INPUTS
+    
     $(".cell").click(function() {
         //CHECK IF THE CELL IS AVAILABLE
         if ($(this).html() !== "") {
-   
         } else {
             $(this).html(character);
             if (didWhoWin(character) === false) {
@@ -216,3 +168,4 @@ console.log("playedCells: ", playedCells, " || xPlayedCells: ", xPlayedCells, " 
         }
     });
 });
+
