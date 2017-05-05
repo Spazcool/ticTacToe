@@ -1,6 +1,6 @@
 # freeCodeCamp Tic Tac Toe (ver. 1)
 
-My first go at the game of Tic Tac Toe in JavaScript/jQuery. It's a simple game and I hope you enjoy.
+My first go at the game of Tic Tac Toe in JavaScript/jQuery, CSS & HTML as one of the final projects to freeCodeCamp's frontend development program. It's a simple game and I hope you enjoy.
 
 ## Getting Started
 
@@ -17,10 +17,12 @@ No installation required.
 ## Built With
 
 * [jQuery]("https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js")
+* HTML
+* CSS
 
 ## Authors
 
-* **Douglas Wright** - *Initial work* - [Spazcool](https://github.com/Spazcool)
+* **Douglas Wright** - [Spazcool](https://github.com/Spazcool)
 
 ## License
 
