@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*GET RID OF UNWANTED PADDING AND MARGINS*/
 
 html, body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, ol, ul, li, tr {
@@ -14,6 +15,23 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
+=======
+/*reset styles*/
+html, body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, ol, ul, li,tr{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body{
+    padding:0%;
+    width: 100%;
+	height: 100vh;
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     background-color: black;
     color: white;
     background: -webkit-radial-gradient(circle, #000033, #191970, black);
@@ -22,12 +40,18 @@ body {
     background: radial-gradient(circle, #000033, #191970, black);
 }
 
+<<<<<<< HEAD
 .header {
     top: 0;
+=======
+.header{
+    top: 0%;
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     width: 100%;
     height: 9em;
     background-color: #383838;
     font-family: 'Lobster', cursive;
+<<<<<<< HEAD
     border-bottom: 3px solid black;
     z-index: 3;
 }
@@ -47,6 +71,33 @@ h1 {
     margin-bottom: 2em;
     height: 5em;
     width: 5em;
+=======
+     border-bottom: 3px solid black;
+     z-index: 3;
+/*font-family: 'Satisfy', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Great Vibes', cursive;*/
+}
+.choice,h1{
+    width: 33%;
+    float:left;
+}
+h1{
+    font-size: 3em;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 5px 0 #000000, 3px 3px 0 #000000;
+}
+#X{
+}
+#O{
+}
+#X,#O{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 5em;
+    width:5em;
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     font-weight: bold;
     font-size: 1em;
     background-color: #800000;
@@ -55,6 +106,7 @@ h1 {
     border-right: 2px solid black;
     border-bottom: 2px solid black;
 }
+<<<<<<< HEAD
 
 .ticBox {
     position: fixed;
@@ -77,6 +129,32 @@ h1 {
     align-items: center;
 }
 
+=======
+/*.xORo{
+    font-size: 0.5em;
+}*/
+
+.ticBox{
+    position: fixed;
+	z-index: 1;
+	margin: 9% auto;
+	left: 0;
+	right: 0;
+    width: 50%;
+    height: ;
+    padding:0.1em;
+    background-color: #06A9FC;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    /*border: 3px dotted pink;*/
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
 .cell {
     border-top: 3px solid black;
     border-left: 3px solid black;
@@ -86,17 +164,28 @@ h1 {
     align-items: center;
     font-size: 1em;
     padding: 0%;
+<<<<<<< HEAD
+=======
+    /*flex: 0 0 32%;*/
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     flex: 28%;
     height: 6em;
     margin: 0.1em;
     background-color: #000020;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
 .cell:nth-child(2n) {
     background-color: #000011;
 }
 
+<<<<<<< HEAD
 .banner {
+=======
+.banner{
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     text-align: center;
     color: black;
     padding-top: 1.5em;
@@ -105,6 +194,7 @@ h1 {
     position: absolute;
     border-bottom: 2px solid black;
     width: 100%;
+<<<<<<< HEAD
     background-color: #828282;
 }
 
@@ -121,10 +211,34 @@ button, .cell:hover {
 }
 
 #reset {
+=======
+    /*margin-top: 53vh;*/
+    /*margin-top: 1vh;*/
+    background-color: #828282	;
+
+}
+
+button{
+    outline: 0;
+    /*width: 5em;*/
+    /*height:1.5em;*/
+    /*margin: 5% 0% 0% 46%;*/
+}
+button,.cell:hover{
+    cursor: pointer;
+}
+.reset{
+    width: 100%;
+
+    /*border: 2px dotted red;*/
+}
+#reset{
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     margin-top: 1em;
     opacity: 1;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
+<<<<<<< HEAD
 }
 
 .footer {
@@ -141,5 +255,24 @@ a {
 }
 
 a:hover {
+=======
+
+}
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+    padding-bottom:0.2em;
+    width: 100%;
+    /*height: 50px;*/
+    font-family: 'Lobster', cursive;
+    /*border: 3px dotted black;*/
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+a:hover{
+>>>>>>> 8956d4d02fb18b1ed2e3ada7ecb4c9f4842cc311
     color: red;
 }
