@@ -1,4 +1,3 @@
-
 /*GET RID OF UNWANTED PADDING AND MARGINS*/
 html, body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, ol, ul, li, tr {
     margin: 0;
@@ -13,7 +12,7 @@ html, body, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a
 body{
     padding:0%;
     width: 100%;
-	height: 100vh;
+    height: 100vh;
     background-color: black;
     color: white;
     background: -webkit-radial-gradient(circle, #000033, #191970, black);
@@ -21,8 +20,6 @@ body{
     background: -moz-radial-gradient(circle, #000033, #191970, black);
     background: radial-gradient(circle, #000033, #191970, black);
 }
-
-
 
 .header{
     top: 0%;
@@ -99,10 +96,10 @@ h1{
 
 .ticBox{
     position: fixed;
-	z-index: 1;
-	margin: 9% auto;
-	left: 0;
-	right: 0;
+    z-index: 1;
+    margin: 9% auto;	
+    left: 0;
+    right: 0;
     width: 50%;
     height: ;
     padding:0.1em;
