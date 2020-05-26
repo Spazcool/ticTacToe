@@ -56,7 +56,7 @@ h1 {
 
 .ticBox {
     position: fixed;
-    margin: 9% auto;
+    margin: 5% auto;
     left: 0;
     right: 0;
     width: 50%;
@@ -80,12 +80,14 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 100px;
+    line-height: 0;
     padding: 0%;
     flex: 28%;
     height: 9em;
-    margin: 0.1em;
-    background-color: #000020;
+    max-height: 200px;
+    margin: 0.01em;
+    background-color: #000040;
 }
 
 .cell:nth-child(2n) {
@@ -95,8 +97,8 @@ h1 {
 .banner{
     text-align: center;
     color: black;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     position: absolute;
     border-bottom: 2px solid black;
     width: 100%;
@@ -141,11 +143,6 @@ a:hover{
 }
 
 @media only screen and (max-width: 600px){
-    .banner{
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-
     .ticBox {
         position: fixed;
         margin: 25% auto;
@@ -156,6 +153,7 @@ a:hover{
 
     .cell{
         height: 6em;
+        max-height: 100px;
     }
 
     h1{
