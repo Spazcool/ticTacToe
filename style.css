@@ -88,6 +88,7 @@ h1 {
     max-height: 200px;
     margin: 0.01em;
     background-color: #000040;
+    font: sans-serif;
 }
 
 .cell:nth-child(2n) {
