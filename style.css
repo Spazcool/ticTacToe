@@ -28,7 +28,6 @@ body{
     background-color: #383838;
     font-family: 'Lobster', cursive;
     border-bottom: 3px solid black;
-    z-index: 3;
 }
 
 h1 {
@@ -39,24 +38,6 @@ h1 {
 .choice, h1 {
     width: 33%;
     float: left;
-}
-
-#X, #O {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    height: 5em;
-    width: 5em;
-     border-bottom: 3px solid black;
-     z-index: 3;
-}
-
-.choice,h1{
-    width: 33%;
-    float:left;
-}
-h1{
-    font-size: 3em;
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 5px 0 #000000, 3px 3px 0 #000000;
 }
 
 #X,#O{
@@ -75,7 +56,6 @@ h1{
 
 .ticBox {
     position: fixed;
-    z-index: 1;
     margin: 9% auto;
     left: 0;
     right: 0;
@@ -92,27 +72,6 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-.ticBox{
-    position: fixed;
-    z-index: 1;
-    margin: 9% auto;	
-    left: 0;
-    right: 0;
-    width: 50%;
-    height: ;
-    padding:0.1em;
-    background-color: #06A9FC;
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .cell {
@@ -139,7 +98,6 @@ h1{
     color: black;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    z-index: 2;
     position: absolute;
     border-bottom: 2px solid black;
     width: 100%;
@@ -158,19 +116,8 @@ button, .cell:hover {
     width: 100%;
 }
 
-#reset {
-    background-color: #828282;
-
-}
-
-button{
-    outline: 0;
-}
-button,.cell:hover{
-    cursor: pointer;
-}
-
 #reset{
+    background-color: #828282;
     margin-top: 1em;
     opacity: 1;
     border-bottom: 2px solid black;
@@ -190,17 +137,6 @@ a {
     text-decoration: none;
 }
 
-.footer{
-    position: fixed;
-    bottom: 0%;
-    padding-bottom:0.2em;
-    width: 100%;
-    font-family: 'Lobster', cursive;
-}
-a{
-    color:inherit;
-    text-decoration:none;
-}
 a:hover{
     color: red;
 }
