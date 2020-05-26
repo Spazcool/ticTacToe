@@ -60,7 +60,6 @@ h1 {
     left: 0;
     right: 0;
     width: 50%;
-    height: ;
     padding: 0.1em;
     background-color: #06A9FC;
     border-right: 3px solid black;
@@ -84,7 +83,7 @@ h1 {
     font-size: 1em;
     padding: 0%;
     flex: 28%;
-    height: 6em;
+    height: 9em;
     margin: 0.1em;
     background-color: #000020;
 }
@@ -139,4 +138,28 @@ a {
 
 a:hover{
     color: red;
+}
+
+@media only screen and (max-width: 600px){
+    .banner{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .ticBox {
+        position: fixed;
+        margin: 25% auto;
+        left: 0;
+        right: 0;
+        width: 90%;
+    }
+
+    .cell{
+        height: 6em;
+    }
+
+    h1{
+        padding-top: 0.3em;
+        font-size: 2em;
+    }
 }
